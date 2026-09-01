@@ -58,7 +58,6 @@ internal class Program
         Console.WriteLine($"Critical Multiplier: {critmultiplier1}");
         Console.WriteLine($"player: {player}");
         Console.WriteLine($"Current HP: {currentHp}");
-        Console.WriteLine();
        
         string Name2 = "b";
         char level2 = '1';
@@ -74,7 +73,6 @@ internal class Program
         Console.WriteLine($"Critical Multiplier: {critmultiplier2}");
         Console.WriteLine($"NPC: {npc}");
         Console.WriteLine($"Current HP: {currentHp}");
-        Console.WriteLine();
 
         string Name3 = "c";
         char level3 = '1';
@@ -90,10 +88,9 @@ internal class Program
         Console.WriteLine($"Critical Multiplier: {critmultiplier3}");
         Console.WriteLine($"Pets: {pets}");
         Console.WriteLine($"Current HP: {currentHp}");
-        Console.WriteLine();
 
         string Name4 = "d";
-        char level4 = '1';
+        char level4 = '6';
         int maxHp4 = 350;
         float attackpower4 = 40.5f;
         Double critmultiplier4 = 1.23;
@@ -106,6 +103,6 @@ internal class Program
         Console.WriteLine($"Critical Multiplier: {critmultiplier4}");
         Console.WriteLine($"Monster: {monster}");
         Console.WriteLine($"Current HP: {currentHp}");
-        Console.WriteLine();
+
     }
 }
