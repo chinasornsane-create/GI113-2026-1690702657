@@ -14,11 +14,11 @@ internal class Program
 
         var bossname = "";
         var rank = 's';
-        int level = 0;
-        int maxhp = 0;
-        int currenthp = 0;
-        float attack = 0;
-        double critmultiplier = 0;
+        int level = 7;
+        int maxhp = 240;
+        int currenthp = 115;
+        float attack = 42.5f;
+        double critmultiplier = 1.75;
         bool isboss = true;
 
         Console.WriteLine("===== kirin save converter =====");
@@ -30,14 +30,24 @@ internal class Program
              $"\nAttack: {attack}" +
              $"\nCrit Multiplier: {critmultiplier}" +
              $"\nIs Boss: {isboss}");
-        //  Implicit coversion int (HP) --->> double 
+        // 1. Implicit coversion int (HP) --->> double 
         Console.WriteLine("\n----- Implicit Conversion: HP as double -----");
-        double currenthpAsDouble = currenthp;
-        Console.WriteLine($"Current HP as double: {currenthpAsDouble}");
+        double currenthpDouble = currenthp;
+        Console.WriteLine($"Current HP as double: {currenthpDouble}");
         //2 c
         Console.WriteLine("\n----- Exact HP Percent (no integer truncation) -----");
-        double hpPercent = currenthpAsDouble * 100 / maxhp;
-        Console.WriteLine($" HP Percent(exact): {hpPercent:F2}%");
+        double hpPercentExact = currenthpDouble * 100 / maxhp;
+        Console.WriteLine($" HP Percent(exact): {hpPercentExact}%");
+        //3.
+        Console.WriteLine("\n----- Explicit Cast: Attack Power -> Display Int -----");
+        int attackInt = (int)attack;
+        Console.WriteLine($"Attack Power as Integer: {attackInt}");
+
+        Console.WriteLine("\n-----Cast vs Convert: Crit Multiplier-----");
+        int critMultiplierInt = (int)critmultiplier;
+        int critMultiplierConverted = Convert.ToInt32(critmultiplier);
+        Console.WriteLine($"Crit Multiplier as Integer: {critMultiplierInt}");
+        Console.WriteLine($"Crit Multiplier as Integer (Convert): {critMultiplierConverted}");
 
     }
 }
