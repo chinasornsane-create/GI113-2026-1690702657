@@ -34,15 +34,15 @@ internal class Program
         Console.WriteLine("\n----- Implicit Conversion: HP as double -----");
         double currenthpDouble = currenthp;
         Console.WriteLine($"Current HP as double: {currenthpDouble}");
-        //2 c
+        //2 calculate percentage
         Console.WriteLine("\n----- Exact HP Percent (no integer truncation) -----");
         double hpPercentExact = currenthpDouble * 100 / maxhp;
         Console.WriteLine($" HP Percent(exact): {hpPercentExact}%");
-        //3.
+        //3.Explicit  float (attackpower) --->> int
         Console.WriteLine("\n----- Explicit Cast: Attack Power -> Display Int -----");
         int attackInt = (int)attack;
         Console.WriteLine($"Attack Power as Integer: {attackInt}");
-
+        //4. Cast vs Convert double (critmultiplier)-->> int
         Console.WriteLine("\n-----Cast vs Convert: Crit Multiplier-----");
         int critMultiplierInt = (int)critmultiplier;
         int critMultiplierConverted = Convert.ToInt32(critmultiplier);
