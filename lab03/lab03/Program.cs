@@ -32,6 +32,7 @@ internal class Program
              $"\nIs Boss: {isboss}");
         // 1. Implicit coversion int (HP) --->> double 
         Console.WriteLine("\n----- Implicit Conversion: HP as double -----");
+        Console.WriteLine();
         double currenthpDouble = currenthp;
         Console.WriteLine($"Current HP as double: {currenthpDouble}");
         //2 calculate percentage
