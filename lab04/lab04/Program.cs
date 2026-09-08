@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace lab04/*
+﻿namespace lab04/*
  * Student ID :1690702657
  * Name       :chinasorn saneewong na authaya
  *Section     :129C
@@ -13,7 +11,7 @@ namespace lab04/*
         static void Main(string[] args)
         {
 
-            Console.WriteLine("+------------------------------+"); //แค่
+            Console.WriteLine("+------------------------------+");
             Console.WriteLine("|      CHARACTER CREATION       |");
             Console.WriteLine("+------------------------------+");
 
