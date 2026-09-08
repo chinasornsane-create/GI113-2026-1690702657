@@ -1,16 +1,15 @@
-﻿namespace lab04/*
- * Student ID :1690702657
- * Name       :chinasorn saneewong na authaya
- *Section     :129C
- * No.        :N/A
- * Course     : GI113 Computer Programming (GI)
- */
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab04._2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("+------------------------------+");
             Console.WriteLine("|      CHARACTER CREATION       |");
             Console.WriteLine("+------------------------------+");
@@ -47,7 +46,6 @@
             Console.WriteLine("starting luck (0.0-10.0): ");
             bool luckOk = double.TryParse(Console.ReadLine(), out double luck);
             Console.WriteLine($"\n{charName} the Class-{ClassNum} adventurer enters the dungeon. luck: {luck}");
-
 
         }
     }
