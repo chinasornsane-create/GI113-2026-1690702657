@@ -37,7 +37,7 @@ internal class Program
         Console.WriteLine($"Current HP as double: {currenthpDouble}");
         //2 calculate percentage
         Console.WriteLine("\n----- Exact HP Percent (no integer truncation) -----");
-        double hpPercentExact = currenthpDouble * 10 / maxhp;
+        double hpPercentExact = currenthpDouble * 100 / maxhp;
         Console.WriteLine($" HP Percent(exact): {hpPercentExact}%");
         //3.Explicit  float (attackpower) --->> int
         Console.WriteLine("\n----- Explicit Cast: Attack Power -> Display Int -----");
