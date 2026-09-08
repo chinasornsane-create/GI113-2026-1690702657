@@ -16,20 +16,29 @@ namespace lab04/*
             Console.WriteLine("+------------------------------+"); //แค่
             Console.WriteLine("|      CHARACTER CREATION       |");
             Console.WriteLine("+------------------------------+");
+
             Console.Write("Name your hero: ");
-            Console.Write(">>>");
+            Console.Write(">>> ");
             string playerName = Console.ReadLine();
-            Console.WriteLine($"\n\"welcome,{playerName}.your journey begins..");
-            Console.Write("Choose a class (1-3): ");
+            Console.WriteLine($"\nwelcome, {playerName}.your journey begins...");
+
             Console.WriteLine("+------------------------+");
             Console.WriteLine("|   DIFFICULTY SELECT    |");
             Console.WriteLine("+------------------------+");
+
             Console.WriteLine("Choose difficulty (1-3): ");
             int difficulty =  Convert.ToInt32(Console.ReadLine());
-            bool classOk = int.TryParse(Console.ReadLine(), out int classNum);
-            Console.Write("Starting luck (0.0-10.0): ");
-            bool luckOk = double.TryParse(Console.ReadLine(), out double luck);
-            Console.WriteLine($"{playerName} the Class-{classNum} adventurer enters the dungeon. Luck: {luck}");
+            Console.WriteLine($"DIFFICULTY: {difficulty} SELECTED. good luck out there...");
+
+            Console.WriteLine("+------------------------+");
+            Console.WriteLine("|        ITEM SHOP       |");
+            Console.WriteLine("+------------------------+");
+
+            Console.WriteLine("HOW Many potions ? ");
+            bool isValid = int.TryParse(Console.ReadLine(), out int quantity);
+            Console.WriteLine($"valid input : {isValid}");
+            Console.WriteLine($"Quantity: {quantity}");
+
         }
     }
 }
