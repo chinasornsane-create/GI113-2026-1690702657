@@ -44,14 +44,17 @@ namespace lab05._1
             heroHp = heroHp + potionHeal;
             Console.WriteLine($"\nHERO drinks a potion, healing {potionHeal} HP. Hero HP now {heroHp}");
 
-            int norDmg = Math.Max(0, heroHp - monsterAtk);
-            Console.WriteLine($"\nNormal attack would deal {norDmg} DMG.");
+            int normDmg = Math.Max(0, heroHp - monsterAtk);
+            Console.WriteLine($"\nNormal attack would deal {normDmg} DMG.");
             int pwrDmg = Math.Max(0, (heroAtk + 2) - monsterAtk);
             Console.WriteLine($"\nPowerful attack would deal {pwrDmg} DMG.");
 
             Random randomSomething = new Random();
             int roll = randomSomething.Next(1, 101);
             bool isCrit = roll <= 100;
+            int critDmg = normDmg + Convert.ToInt32(isCrit) * normDmg;
+            Console.WriteLine($"\ncritical hit roll: {roll}, critical : {isCrit}");
+            Console.WriteLine($"If critical, normal attack would insteaddeal {critDmg} .");
         }
     }
 
