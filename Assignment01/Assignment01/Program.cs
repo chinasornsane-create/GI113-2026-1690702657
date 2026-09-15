@@ -43,7 +43,7 @@ namespace Assignment01/*
                 Console.WriteLine("|    XXXXXXXXXXXXXXXXX              |");
                 Console.WriteLine("|       XXXX                        |");
                 Console.WriteLine("|->->->->->->->->->->->->->->->->-><|");
-                Console.WriteLine($"          {GameTitle}              |");
+                Console.WriteLine($"          {GameTitle}               |");
                 Console.WriteLine($"|Hero Name   : {hero}                 |");
                 Console.WriteLine($"|Rank        : {Rank}                    |");
                 Console.WriteLine($"|Level       : {Level}                  |");
