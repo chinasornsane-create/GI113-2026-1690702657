@@ -102,7 +102,7 @@ internal class Program
             if (ammunition > 0)
             {
                 zomdieHp -= atkgun;
-                Console.WriteLine($"You attacked the zombie! Zombie HP: {zomdieHp}, Ammunition left: {ammunition}");
+                Console.WriteLine($"You attacked the zombie! Zombie HP: {zomdieHp}, Ammunition left: {ammunition-=1}");
             }
             else
             {
