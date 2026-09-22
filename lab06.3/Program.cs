@@ -77,7 +77,7 @@ internal class Program
        
         int atkgun  =100; 
         int zomdieHp  = 120;
-        int ammunition = 20;
+        int ammunition = 100;
          
         Console.WriteLine("==>> Kill zombie <<== ");
         Console.WriteLine("atkgun vs zomdieHp Acctions:"  );
@@ -88,14 +88,20 @@ internal class Program
         bool userInput = int.TryParse(Console.ReadLine(), out int choice);
         if (!userInput || choice < 1 || choice > 2)
         {
-            Console.WriteLine("Invalid Acctions");
+            if (choice < 1 || choice > 2)
+            {
+                Console.WriteLine("choose a numder between 1 and 2 ");
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice. Please choose 1 or 2.");
+            }
         }
         else if (choice == 1)
         {
             if (ammunition > 0)
             {
                 zomdieHp -= atkgun;
-                ammunition--;
                 Console.WriteLine($"You attacked the zombie! Zombie HP: {zomdieHp}, Ammunition left: {ammunition}");
             }
             else
@@ -105,9 +111,8 @@ internal class Program
         }
         else if (choice == 2)
         {
-            ammunition += 10; // Reloading adds 10 ammunition
+            ammunition += 0;
             Console.WriteLine($"You reloaded! Ammunition now: {ammunition}");
-            Console.WriteLine($"You attacked the zombie! Zombie HP: {zomdieHp}, Ammunition left: {ammunition}");
         }
 
     }
