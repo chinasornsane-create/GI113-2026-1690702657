@@ -21,7 +21,8 @@ internal class Program
         Console.WriteLine("2) Fire Magic");
         Console.WriteLine("3) Defend");
         Console.WriteLine("4) Run");
-        Console.Write("Choose (1-4): ");
+        Console.WriteLine("5) kiss");
+        Console.Write("Choose (1-5): ");
         int.TryParse(Console.ReadLine(), out int command);
 
         switch (command)
@@ -38,6 +39,9 @@ internal class Program
             case 4:
                 Console.WriteLine("Hero looks for a way out...");
                 break;
+            case 5:
+                Console.WriteLine("Hero gives the slime a kiss.");
+                break;
             default:
                 Console.WriteLine("Hero hesitates. Invalid command!");
                 break;
@@ -46,6 +50,7 @@ internal class Program
         {
             1 => 12,
             2 => 18,
+            5 => 10,
             _ => 0
         };
         int damage = Math.Max(0, power - monsterDefense);
