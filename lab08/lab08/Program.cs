@@ -17,7 +17,7 @@ internal class Program
         int minimum;
         for (int i = 0; i < numbers.Length; i++)
         {
-            Console.WriteLine("Number " + (i + 1) + ": " + numbers[i]);
+            Console.WriteLine("Number " + (i + 1) + ". " + numbers[i]);
         }
 
         sum = 0;
@@ -47,6 +47,7 @@ internal class Program
         foreach (int n in numbers)
         {
             Console.WriteLine("Sorted: " + n);
+
         }
     }
 }
