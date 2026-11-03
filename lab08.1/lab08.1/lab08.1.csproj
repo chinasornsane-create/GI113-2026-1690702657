@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="D:\1690702657\repo\GI113-2026-1690702657\lab08.1\Program.cs" Link="Program.cs" />
+  </ItemGroup>
+
 </Project>

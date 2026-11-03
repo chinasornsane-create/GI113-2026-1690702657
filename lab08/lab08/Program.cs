@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace lab08/*
+﻿namespace lab08/*
  * Student ID :1690702657
  * Name       :chinasorn saneewong na authaya
  * Section    :129C
@@ -12,27 +10,20 @@ internal class Program
 {
     static void Main(string[] args)
     {
-         int[] numbers = { 12, 7, 30, 4, 19, 25, 9, 18 };
+        int[] numbers = {  -5, -2, -9 };
         int sum;
         float average;
         int maximum;
         int minimum;
-        void Start()
+        for (int i = 0; i < numbers.Length; i++)
         {
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Console.WriteLine("Number " + (i + 1) + ": " + numbers[i]);
-            }
+            Console.WriteLine("Number " + (i + 1) + ": " + numbers[i]);
         }
+
         sum = 0;
         for (int i = 0; i < numbers.Length; i++)
         {
             sum += numbers[i];
-        }
-        System.Array.Sort(numbers);
-        foreach (int n in numbers)
-        {
-            Console.WriteLine("Sorted: " + n);
         }
         average = (float)sum / numbers.Length;
         Console.WriteLine("Sum: " + sum);
@@ -52,8 +43,11 @@ internal class Program
         }
         Console.WriteLine("Maximum: " + maximum);
         Console.WriteLine("Minimum: " + minimum);
-
-
-
+        System.Array.Sort(numbers);
+        foreach (int n in numbers)
+        {
+            Console.WriteLine("Sorted: " + n);
+        }
     }
 }
+
