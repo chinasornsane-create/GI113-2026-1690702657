@@ -48,7 +48,7 @@ internal class Program
                     double resultIngot = amount * SmeltRate;
                     Console.WriteLine("--- Calculation Results ---");
                     Console.WriteLine($"Smelting {amount} {MaterialName}  Ore");
-                    Console.WriteLine($"Result: {resultIngot:F2} Ingot"); 
+                    Console.WriteLine($"Result: {resultIngot:F2} Iron Ingot"); 
                 }
                 else
                 {
